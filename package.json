@@ -1,0 +1,27 @@
+{
+  "name": "fastjs-cli",
+  "version": "1.0.0",
+  "description": "Fastjs-cli can help you build a npm project easily.",
+  "main": "index.js",
+  "bin": {
+    "fastjs": "command.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastjs-team/fastjs-cli.git"
+  },
+  "keywords": [
+    "fastjs",
+    "fastjs-next",
+    "fastjs-cli"
+  ],
+  "author": "dy-xiaodong2022",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fastjs-team/fastjs-cli/issues"
+  },
+  "homepage": "https://github.com/fastjs-team/fastjs-cli#readme",
+  "dependencies": {
+    "commander": "^9.4.1"
+  }
+}
