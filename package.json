@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/fastjs-team/fastjs-cli#readme",
   "dependencies": {
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.1.4"
   }
 }
