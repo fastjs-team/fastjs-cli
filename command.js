@@ -1,6 +1,10 @@
 #! /usr/bin/env node
 
 const program = require('commander');
+const output = require('./lib/console/output');
+
+// Add line
+output("")
 
 program
   .name('fastjs')
@@ -18,18 +22,11 @@ program
     require('./lib/create')(name, cmd);
   })
 
-// if no arguments, output help
-if (!process.argv.slice(2).length) {
-  program.outputHelp();
-}
-
 // if arguments name is not in the list, output error
 program.on('command:*', function (operands) {
-  console.log('\x1b[31m' +
-    'Invalid command: ' + operands[0] +
+  output('Invalid command: ' + operands[0] +
     '\n' +
-    '\nSee --help for a list of available commands.' +
-    '\x1b[0m');
+    '\nSee --help for a list of available commands.', 'red');
 })
 
 // parse arguments & run
