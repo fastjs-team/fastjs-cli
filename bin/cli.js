@@ -8,7 +8,12 @@ const outputDev = require('../lib/console/outputDev');
 output("")
 
 outputDev("Dev mode on")
-outputDev("Remove ondev.key to disable dev mode")
+outputDev("Remove file `ondev.key` to disable dev mode")
+
+// get command name
+const cmdName = process.argv[2];
+outputDev(`Command: ${cmdName}`)
+
 outputDev("")
 
 program
@@ -29,6 +34,7 @@ program
 
 // if arguments name is not in the list, output error
 program.on('command:*', function (operands) {
+  outputDev("Error: unknown command " + operands[0]);
   output('Invalid command: ' + operands[0] +
     '\n' +
     '\nSee --help for a list of available commands.', 'red');
