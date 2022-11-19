@@ -1,15 +1,20 @@
 #! /usr/bin/env node
 
 const program = require('commander');
-const output = require('./lib/console/output');
+const output = require('../lib/console/output');
+const outputDev = require('../lib/console/outputDev');
 
 // Add line
 output("")
 
+outputDev("Dev mode on")
+outputDev("Remove ondev.key to disable dev mode")
+outputDev("")
+
 program
   .name('fastjs')
   .description('Fastjs cli can help you build a npm project easily.')
-  .version(`fastjs ${require('./package').version}`)
+  .version(`fastjs ${require('../package.json').version}`)
   .usage('<command> [options]');
 
 program
@@ -19,7 +24,7 @@ program
   .option('-f, --force', 'overwrite target directory if it exists')
   .action((name, cmd) => {
     // require create fn and run
-    require('./lib/create')(name, cmd);
+    require('../lib/create')(name, cmd);
   })
 
 // if arguments name is not in the list, output error
