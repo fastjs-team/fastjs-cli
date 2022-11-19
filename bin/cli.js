@@ -27,6 +27,7 @@ program
   .arguments('<name>')
   .description('create a new project powered by fastjs-cli')
   .option('-f, --force', 'overwrite target directory if it exists')
+  .option('-p, --path <path>', 'create project in a specific directory')
   .action((name, cmd) => {
     // require create fn and run
     require('../lib/create')(name, cmd);
