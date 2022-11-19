@@ -5,6 +5,7 @@ const program = require('commander');
 program
   .name('fastjs')
   .description('Fastjs cli can help you build a npm project easily.')
+  .version(`fastjs ${require('./package').version}`)
   .usage('<command> [options]');
 
 program
@@ -13,9 +14,8 @@ program
   .description('create a new project powered by fastjs-cli')
   .option('-f, --force', 'overwrite target directory if it exists')
   .action((name, cmd) => {
-    // log
-    console.log('test');
-    require('lib/create.js')(name, cleanArgs(cmd));
+    // require create fn and run
+    require('./lib/create')(name, cmd);
   })
 
 // if no arguments, output help
@@ -32,17 +32,5 @@ program.on('command:*', function (operands) {
     '\x1b[0m');
 })
 
-// [MIT] from https://github.com/vuejs/vue-cli/
-function cleanArgs(cmd) {
-  // setup args
-  const args = {}
-  cmd.options.forEach(arg => {
-    const key = arg.long
-      .replace(/^--/, '')
-      .replace(/-(\w)/g, (_, c) => c ? c.toUpperCase() : '')
-    if (typeof cmd[key] !== 'function' && typeof cmd[key] !== 'undefined') {
-      args[key] = cmd[key]
-    }
-  })
-  return args
-}
+// parse arguments & run
+program.parse(process.argv);
