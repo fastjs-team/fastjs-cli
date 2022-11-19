@@ -16,6 +16,7 @@ outputDev(`Command: ${cmdName}`)
 
 outputDev("")
 
+// command setup
 program
   .name('fastjs')
   .description('Fastjs cli can help you build a npm project easily.')
