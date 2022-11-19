@@ -4,7 +4,7 @@
   "description": "Fastjs-cli can help you build a npm project easily.",
   "main": "index.js",
   "bin": {
-    "fastjs": "command.js"
+    "fastjs": "bin/cli.js"
   },
   "repository": {
     "type": "git",
