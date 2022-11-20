@@ -1,0 +1,6 @@
+{
+  "rm": [
+    "src/assets",
+    "README.md"
+  ]
+}
