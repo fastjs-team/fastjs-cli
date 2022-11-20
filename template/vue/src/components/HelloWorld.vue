@@ -30,8 +30,9 @@ export default {
     <a href="https://github.com/fastjs-team/fastjs-cli/" target="_blank">Github</a>
   </div>
   <div class="select">
-    <span>Typescript&nbsp;|</span>
-    <a href="https://github.com/topics/typescript" target="_blank">Github</a>
-    <a href="https://www.typescriptlang.org/" target="_blank">Website</a>
+    <span>Vue&nbsp;|</span>
+    <a href="https://vuejs.org/guide/essentials/application.html" target="_blank">Docs</a>
+    <a href="https://github.com/vuejs/" target="_blank">Github</a>
+    <a href="https://vuejs.org/" target="_blank">Website</a>
   </div>
 </template>
