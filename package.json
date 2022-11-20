@@ -23,6 +23,7 @@
   "homepage": "https://github.com/fastjs-team/fastjs-cli#readme",
   "dependencies": {
     "commander": "^7.1.0",
+    "download": "^4.4.3",
     "fs-extra": "^10.1.0",
     "inquirer": "^8.0.0",
     "io-spin": "^0.4.1"
