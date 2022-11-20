@@ -24,6 +24,7 @@
   "dependencies": {
     "commander": "^7.1.0",
     "fs-extra": "^10.1.0",
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "io-spin": "^0.4.1"
   }
 }
