@@ -18,6 +18,7 @@ selecter("#app").html(`
   </div>
   <div class="select">
     <span>Typescript&nbsp;|</span>
+    <a href="https://www.typescriptlang.org/docs/" target="_blank">Docs</a>
     <a href="https://github.com/topics/typescript" target="_blank">Github</a>
     <a href="https://www.typescriptlang.org/" target="_blank">Website</a>
   </div>
