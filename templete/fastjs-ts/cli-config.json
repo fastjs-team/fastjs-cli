@@ -1,0 +1,7 @@
+{
+  "rm": [
+    "src/counter.js",
+    "src/javascript.svg",
+    "src/vite-env.d.ts"
+  ]
+}
