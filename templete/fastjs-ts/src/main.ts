@@ -16,6 +16,11 @@ selecter("#app").html(`
     <span>Cli&nbsp;|</span>
     <a href="https://github.com/fastjs-team/fastjs-cli/" target="_blank">Github</a>
   </div>
+  <div class="select">
+    <span>Typescript&nbsp;|</span>
+    <a href="https://github.com/topics/typescript" target="_blank">Github</a>
+    <a href="https://www.typescriptlang.org/" target="_blank">Website</a>
+  </div>
 `)
 
 // mount click event
