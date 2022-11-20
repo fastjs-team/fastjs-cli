@@ -4,9 +4,6 @@ const program = require('commander');
 const output = require('../lib/console/output');
 const outputDev = require('../lib/console/outputDev');
 
-// Add line
-output("")
-
 outputDev("Dev mode on")
 outputDev("Remove file `ondev.key` to disable dev mode")
 
@@ -14,7 +11,8 @@ outputDev("Remove file `ondev.key` to disable dev mode")
 const cmdName = process.argv[2];
 outputDev(`Command: ${cmdName}`)
 
-outputDev("")
+// Add line
+output("")
 
 // command setup
 program
