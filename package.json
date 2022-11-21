@@ -1,6 +1,6 @@
 {
   "name": "fastjs-cli",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Fastjs-cli can help you build a npm project easily.",
   "main": "index.js",
   "bin": {
