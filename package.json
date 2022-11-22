@@ -26,6 +26,7 @@
     "download": "^4.4.3",
     "fs-extra": "^10.1.0",
     "inquirer": "^8.0.0",
-    "io-spin": "^0.4.1"
+    "io-spin": "^0.4.1",
+    "picocolors": "^1.0.0"
   }
 }
