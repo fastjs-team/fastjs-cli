@@ -32,6 +32,15 @@ program
     require('../lib/create')(name, cmd);
   })
 
+program
+  .command('dev')
+  .description('start a dev server')
+  .option('-p, --port <port>', 'set dev server port')
+  .action((cmd) => {
+  // require start fn and run
+    require('../lib/dev')(cmd);
+  })
+
 // if arguments name is not in the list, output error
 program.on('command:*', function (operands) {
   outputDev("Error: unknown command " + operands[0]);
