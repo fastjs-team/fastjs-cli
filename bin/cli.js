@@ -41,6 +41,15 @@ program
     require('../lib/dev')(cmd);
   })
 
+program
+  .command('build')
+  .description('build a project')
+  .option('-p, --path <path>', 'build project in a specific directory')
+  .action((cmd) => {
+  // require build fn and run
+    require('../lib/build')(cmd);
+  })
+
 // if arguments name is not in the list, output error
 program.on('command:*', function (operands) {
   outputDev("Error: unknown command " + operands[0]);
