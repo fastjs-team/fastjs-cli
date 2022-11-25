@@ -6,6 +6,7 @@ const outputDev = require('../lib/console/outputDev');
 
 outputDev("Dev mode on")
 outputDev("Remove file `ondev.key` to disable dev mode")
+outputDev(`Version: ${require('../package.json').version}`)
 
 // get command name
 const cmdName = process.argv[2];
