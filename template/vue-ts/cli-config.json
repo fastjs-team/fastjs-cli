@@ -2,5 +2,16 @@
   "rm": [
     "src/assets",
     "README.md"
+  ],
+  "plugins": [
+    {
+      "name": "vue-runner",
+      "depends": [
+        "import vue from '@vitejs/plugin-vue'"
+      ],
+      "commands": [
+        "vue()"
+      ]
+    }
   ]
 }
