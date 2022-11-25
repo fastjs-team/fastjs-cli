@@ -1,0 +1,47 @@
+{
+  "project": [
+    {
+      "name": "Fastjs",
+      "parent": "vanilla",
+      "path": "../templates/fastjs"
+    },
+    {
+      "name": "Fastjs-ts",
+      "parent": "vanilla-ts",
+      "path": "../templates/fastjs-ts"
+    },
+    {
+      "name": "Vue",
+      "parent": "vue",
+      "path": "../templates/vue"
+    },
+    {
+      "name": "Vue-ts",
+      "parent": "vue-ts",
+      "path": "../templates/vue-ts"
+    },
+    {
+      "name": "jQuery",
+      "parent": null,
+      "path": null
+    }
+  ],
+  "modules": [
+    {
+      "name": "Vue-Router",
+      "parent": [
+        "Vue",
+        "Vue-ts"
+      ],
+      "path": "../modules/vue-router"
+    },
+    {
+      "name": "Vuex",
+      "parent": [
+        "Vue",
+        "Vue-ts"
+      ],
+      "path": "../modules/vuex"
+    }
+  ]
+}
