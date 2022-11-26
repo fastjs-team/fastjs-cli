@@ -1,0 +1,24 @@
+{
+  "name": "vuex",
+  "depends": [
+    "vuex@next"
+  ],
+  "mkdir": [
+    "src/store"
+  ],
+  "files": [
+    {
+      "from": "store.js",
+      "to": "src/store/index.js"
+    }
+  ],
+  "main": {
+    "file": [
+      "import store from './store'"
+    ],
+    "use": [
+      "store"
+    ]
+  },
+  "rm": []
+}
