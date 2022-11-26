@@ -1,0 +1,41 @@
+{
+  "name": "vue-router",
+  "depends": [
+    "vue-router@4"
+  ],
+  "mkdir": [
+    "src/views",
+    "src/views/home",
+    "src/views/secret",
+    "src/router"
+  ],
+  "files": [
+    {
+      "from": "App.vue",
+      "to": "src/App.vue"
+    },
+    {
+      "from": "home.vue",
+      "to": "src/views/home/index.vue"
+    },
+    {
+      "from": "secret.vue",
+      "to": "src/views/secret/index.vue"
+    },
+    {
+      "from": "router.js",
+      "to": "src/router/index.js"
+    }
+  ],
+  "rm": [
+    "src/components/HelloWorld.vue"
+  ],
+  "main": {
+    "file": [
+      "import router from './router'"
+    ],
+    "use": [
+      "router"
+    ]
+  }
+}
