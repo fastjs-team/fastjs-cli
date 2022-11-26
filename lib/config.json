@@ -44,6 +44,15 @@
       ],
       "type": "vue",
       "path": "../modules/vuex"
+    },
+    {
+      "name": "Ant Design Vue",
+      "parent": [
+        "Vue",
+        "Vue-ts"
+      ],
+      "type": "ui",
+      "path": "../modules/antdv"
     }
   ]
 }
