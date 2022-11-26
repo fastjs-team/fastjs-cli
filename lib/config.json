@@ -33,6 +33,7 @@
         "Vue",
         "Vue-ts"
       ],
+      "type": "vue",
       "path": "../modules/vue-router"
     },
     {
@@ -41,6 +42,7 @@
         "Vue",
         "Vue-ts"
       ],
+      "type": "vue",
       "path": "../modules/vuex"
     }
   ]
