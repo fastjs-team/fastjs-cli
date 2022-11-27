@@ -28,6 +28,11 @@
   ],
   "modules": [
     {
+      "name": "Require Support",
+      "parent": [],
+      "path": "../modules/require"
+    },
+    {
       "name": "Vue-Router",
       "parent": [
         "Vue",
