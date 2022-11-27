@@ -1,0 +1,23 @@
+{
+  "name": "Vite Require",
+  "depends": [
+    "vite-require@0.2.3"
+  ],
+  "mkdir": [],
+  "files": [],
+  "main": {
+    "file": [],
+    "use": []
+  },
+  "rm": [],
+  "special": {
+    "viteConfig": {
+      "depends": [
+        "import {viteRequire} from 'vite-require'"
+      ],
+      "commands": [
+        "viteRequire({ fileRegex: /(.js|.ts|.vue)$/ })"
+      ]
+    }
+  }
+}
