@@ -4,7 +4,7 @@ const program = require('commander');
 const output = require('../lib/console/output');
 const outputDev = require('../lib/console/outputDev');
 
-outputDev("Dev mode on")
+outputDev("Dev mode *green*on")
 outputDev("Remove file `ondev.key` to disable dev mode")
 outputDev(`Version: ${require('../package.json').version}`)
 
@@ -30,7 +30,7 @@ program
   .option('-p, --path <path>', 'create project in a specific directory')
   .action((name, cmd) => {
     // require create fn and run
-    require('../lib/create/create')(name, cmd);
+    require('../lib/create')(name, cmd);
   })
 
 program
