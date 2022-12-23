@@ -30,7 +30,7 @@ program
   .option('-p, --path <path>', 'create project in a specific directory')
   .action((name, cmd) => {
     // require create fn and run
-    require('../lib/create')(name, cmd);
+    require('../lib/create/create')(name, cmd);
   })
 
 program
