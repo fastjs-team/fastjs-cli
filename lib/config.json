@@ -30,7 +30,13 @@
     {
       "name": "Require Support",
       "parent": [],
-      "path": "../modules/require"
+      "path": "../modules/require",
+      "on": true
+    },
+    {
+      "name": "js-cookie",
+      "parent": [],
+      "path": "../modules/js-cookie"
     },
     {
       "name": "Vue-Router",
@@ -38,7 +44,6 @@
         "Vue",
         "Vue-ts"
       ],
-      "type": "vue",
       "path": "../modules/vue-router"
     },
     {
@@ -47,7 +52,6 @@
         "Vue",
         "Vue-ts"
       ],
-      "type": "vue",
       "path": "../modules/vuex"
     },
     {
@@ -56,7 +60,14 @@
         "Vue",
         "Vue-ts"
       ],
-      "type": "ui",
+      "path": "../modules/antdv"
+    },
+    {
+      "name": "Element Ui Vue",
+      "parent": [
+        "Vue",
+        "Vue-ts"
+      ],
       "path": "../modules/antdv"
     }
   ]
