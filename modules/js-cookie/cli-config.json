@@ -1,0 +1,20 @@
+{
+  "name": "js-cookie",
+  "depends": [
+    "js-cookie"
+  ],
+  "mkdir": [
+    "src/demo"
+  ],
+  "files": [
+    {
+      "from": "main.js",
+      "to": "src/demo/js-cookie.js"
+    }
+  ],
+  "main": {
+    "file": [],
+    "use": []
+  },
+  "rm": []
+}
