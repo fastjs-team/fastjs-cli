@@ -1,6 +1,6 @@
 {
   "name": "fastjs-cli",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Fastjs-cli can help you build a npm project easily.",
   "main": "index.js",
   "bin": {
@@ -25,7 +25,6 @@
     "commander": "^7.1.0",
     "fs-extra": "^10.1.0",
     "inquirer": "^8.0.0",
-    "ora": "^5.4.1",
     "picocolors": "^1.0.0",
     "portfinder": "^1.0.32"
   }
