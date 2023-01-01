@@ -1,5 +1,5 @@
 import './style.css'
-import {selecter} from "fastjs-next";
+import {selecter, FastjsDom, FastjsDomList} from "fastjs-next";
 
 selecter("#app").html(`
   <h1>Hello Fastjs!</h1>
@@ -26,7 +26,7 @@ selecter("#app").html(`
 
 // mount click event
 let time: number = 0;
-let el: fastjsDom = selecter("#counter");
+let el: FastjsDom | FastjsDomList = selecter("#counter");
 el.on("click", () => {
     el.html(`count is ${++time}`);
 })
