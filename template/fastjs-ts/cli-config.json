@@ -1,7 +1,8 @@
 {
   "rm": [
-    "src/counter.js",
+    "src/counter.ts",
     "src/javascript.svg",
+    "src/typescript.svg",
     "src/vite-env.d.ts"
   ],
   "plugins": []
