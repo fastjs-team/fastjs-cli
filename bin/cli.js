@@ -19,7 +19,7 @@ output("")
 program
   .name('fastjs')
   .description('Fastjs cli can help you build a npm project easily.')
-  .version(`fastjs ${require('../package.json').version}`)
+  .version(`fastjs-cli ${require('../package.json').version}`)
   .usage('<command> [options]');
 
 program
