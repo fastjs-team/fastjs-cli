@@ -22,9 +22,9 @@ export default {
 
     <div class="select">
       <span>Fastjs&nbsp;|</span>
-      <a href="https://docs.fastjs.com.cn/" target="_blank">Docs</a>
+      <a href="https://docs.fastjs.cc/" target="_blank">Docs</a>
       <a href="https://github.com/fastjs-team/fastjs-next/" target="_blank">Github</a>
-      <a href="https://fastjs.com.cn/" target="_blank">Website</a>
+      <a href="https://fastjs.cc/" target="_blank">Website</a>
     </div>
     <div class="select">
       <span>Cli&nbsp;|</span>
